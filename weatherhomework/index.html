@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap"
@@ -16,8 +16,9 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="way.css/style.css" />
+    <link rel="stylesheet" href="way/style.css" />
     <link rel="stylesheet" href="image/img.png" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <header>
@@ -58,44 +59,33 @@
         >
           Search
         </button>
-        <label for="cities">Choose a city:</label>
-        <select id="cities" name="cities">
-          <option value="Little Rock">Little Rock</option>
-          <option value="Fort Smith">Fort Smith</option>
-          <option value="Fayetteville">Fayetteville</option>
-          <option value="Elkins">Elkins</option>
-        </select>
+        <button id="location" type="button" class="btn btn-secondary btn-sm">
+          Current Location
+        </button>
       </form>
-
-      <h1>⛅82°F</h1>
-
-      <button class="fConvert" id="F-convert" type="click" value="⛅82°F">
-        °F
-      </button>
-      <button class="cConvert" id="C-convert" type="click" value="🌤️27°C">
-        °C
-      </button>
+      <h1>🌁<span id="temp">82</span>°F</h1>
 
       <img src="image/img.png" alt="" />
       <ul>
         <li>
-          Wind 4km/H
+          Wind <span id="wind">4</span>km/H
           <hr />
         </li>
         <li>
-          Precipitation 17%
+          Pressure <span id="press">17</span>%
           <hr />
         </li>
         <li>
-          Humidity 70%
+          Humidity <span id="humid">70</span>%
           <hr />
         </li>
       </ul>
-      <h3 id="date">Rainy Thurs 15:30</h3>
+      <h3 class="current" id="current">Rainy</h3>
+      <h3 id="date">Thurs 15:30</h3>
       <hr class="rainline" />
-      <h2 class="ark" id="ark">"State"</h2>
+      <h2 class="ark" id="city">"State"</h2>
       <hr class="cityline" />
     </section>
+    <script src="way/java.js"></script>
   </body>
-  <script src="way.css/java.js"></script>
 </html>
