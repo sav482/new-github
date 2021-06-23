@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="way.css/style.css" />
+    <link rel="stylesheet" href="image/img.png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            Thurs 10:00 <br />
+            🌞
+          </div>
+          <div class="col">
+            Thurs 18:00 <br />
+            ⛅
+          </div>
+          <div class="col">
+            Fri 07:00 <br />
+            ☔
+          </div>
+          <div class="col">
+            Fri 17:00 <br />
+            ⚡
+          </div>
+          <div class="col">
+            Fri 20:00 <br />
+            ☁️
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <hr class="daysline" />
+      <form id="all-state">
+        <input type="text" id="enter-state" placeholder="Enter the State" />
+        <button
+          type="submit"
+          value="Search"
+          id="states"
+          class="btn btn-outline-dark"
+        >
+          Search
+        </button>
+        <label for="cities">Choose a city:</label>
+        <select id="cities" name="cities">
+          <option value="Little Rock">Little Rock</option>
+          <option value="Fort Smith">Fort Smith</option>
+          <option value="Fayetteville">Fayetteville</option>
+          <option value="Elkins">Elkins</option>
+        </select>
+      </form>
+
+      <h1>⛅82°F</h1>
+
+      <button class="fConvert" id="F-convert" type="click" value="⛅82°F">
+        °F
+      </button>
+      <button class="cConvert" id="C-convert" type="click" value="🌤️27°C">
+        °C
+      </button>
+
+      <img src="image/img.png" alt="" />
+      <ul>
+        <li>
+          Wind 4km/H
+          <hr />
+        </li>
+        <li>
+          Precipitation 17%
+          <hr />
+        </li>
+        <li>
+          Humidity 70%
+          <hr />
+        </li>
+      </ul>
+      <h3 id="date">Rainy Thurs 15:30</h3>
+      <hr class="rainline" />
+      <h2 class="ark" id="ark">"State"</h2>
+      <hr class="cityline" />
+    </section>
+  </body>
+  <script src="way.css/java.js"></script>
+</html>
