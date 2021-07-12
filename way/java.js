@@ -31,10 +31,19 @@ let hours = time.getHours();
 let mins = time.getMinutes();
 let day = days[time.getDay()];
 date.innerHTML = `${day} ${hours}:${mins}`;
+function updateTime() {
+  let mins = date.getMinutes();
+  if (mins > 10) {
+    return "0" + mins;
+  } else {
+    return mins;
+  }
+}
 function getcurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+
 function searchLocation(position) {
   let apiKey = "e40877bf98592d338d0e895d3b2c6eba";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
@@ -64,6 +73,8 @@ function  showFahrenheitTemp(event){
   }
 
   let celsiusTemp = null;
+
+
 
 let search = document.querySelector("#all-state");
 search.addEventListener("submit", allSearch);

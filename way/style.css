@@ -1,7 +1,12 @@
-.container {
+.currentDate {
   text-align: center;
   font-family: "Padauk", sans-serif;
-  font-size: 25px;
+  font-size: 30px;
+  color: #0c5a96;
+  margin: auto 0px 10px 0px;
+}
+.weatherSite {
+  margin: auto 100px 0px 0px;
 }
 .daysline {
   width: 70%;
@@ -13,6 +18,7 @@ form {
   text-align: center;
   font-size: 20px;
   font-family: "Padauk", sans-serif;
+  margin: 0px 0px 0px 0px;
 }
 hr {
   border: 2px solid #1c1f23;
@@ -28,18 +34,18 @@ ul {
 }
 h1 {
   font-size: 55px;
-  margin: 150px 0px 0px 150px;
+  margin: 210px 0px 0px 210px;
   color: #0c5a96;
 }
 .weatherEmoji {
   position: absolute;
-  top: 140px;
-  right: 700px;
+  top: 150px;
+  right: 660px;
 }
 .tempF {
   text-decoration: none;
   font-size: 20px;
-  margin: 150px 0px 0px 150px;
+  margin: 210px 0px 0px 210px;
   color: #0c5a96;
 }
 .tempF:hover {
@@ -64,7 +70,7 @@ img {
 }
 .current {
   text-align: center;
-  margin: 90px 0px 0px;
+  margin: 50px 0px 0px;
   color: #0c5a96;
 }
 h3 {
@@ -81,6 +87,8 @@ h2 {
   width: 30%;
   margin-left: auto;
   margin-right: auto;
+
+  margin-bottom: 0px;
 }
 .ark {
   margin: 0;
